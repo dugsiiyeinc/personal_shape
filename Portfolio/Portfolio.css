@@ -7,10 +7,14 @@
 body{
     font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
     background-color: #ffff;
+    /* overflow-x: hidden; */
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
+  height: auto;
+  
 }
+
 
 .container{
     width: min(90%, 1112px);
@@ -32,7 +36,8 @@ img{
     width: 60px;
     height: 4px;
     position: absolute;
-    left: 48%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -20px;
     
 }
@@ -87,4 +92,14 @@ img{
 .tech-tag:hover{
     background-color: #9400ff;
     color: #ffff;
+}
+
+@media (max-width : 932px){
+    .Portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
 }

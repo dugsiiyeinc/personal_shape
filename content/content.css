@@ -55,7 +55,7 @@ img {
 .form-row{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
 }
 .form-group{
   display: grid;
@@ -105,4 +105,24 @@ img {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 2rem;
   width: 100%   ;
+}
+@media (max-width : 932px){
+    .content-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-top: 2rem;
+
+}
+    .form-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.content{
+    width: 90%;
+    margin-inline: auto;
+}
 }

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    background-color: #ffff;
+}
+img{
+    width: 100%;
+}
+
+.container{
+    width: min(90%, 1112px);
+    margin-inline: auto;
+   
+}
+.Portfolio-title{
+    color: #9400ff;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5rem;
+
+}
+.Portfolio-title::after{
+    background-color: #9400ff;
+    content: "";
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    left: 48%;
+    bottom: -20px;
+    
+}
+.Portfolio-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+.Portfolio-item{
+    background-color: #fff;
+    border-radius: 1.5625rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2) ;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Portfolio-item .animate{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Portfolio-content{
+    padding: 20px;
+}
+.Portfolio-content h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 600;
+}
+.Portfolio-content p{
+    color: gray;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+.Portfolio-tech{
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+
+}
+.tech-tag{
+    padding: 0.4rem 1rem;
+    background-color: #f7f9fb;
+    color: black;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+.tech-tag:hover{
+    background-color: #9400ff;
+    color: #ffff;
+}

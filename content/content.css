@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(135deg, #3f51b5, #5b3fa4, #7b3fa0, #9c27b0);
+    background-size: 40px 40px, 40px 40px, cover;
+
+}
+img {
+  width: 100%;
+  height: auto;
+  
+}
+.container{
+    width: min(90%, 1112px);
+    margin-inline: auto;
+}
+.section{
+    
+}

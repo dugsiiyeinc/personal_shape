@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    
+   
+
+}
+img {
+  width: 100%;
+  height: auto;
+  
+}
+.container{
+    width: min(90%, 1112px);
+    margin-inline: auto;
+}
+.footer{
+    background: linear-gradient(90deg,#0f172a 0%,#1e293b 35%,#312e81 65%,#4c1d95 100%);
+    
+}
+.footer-content{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 32px;
+}
+.footer-left p{
+    color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.footer-right{
+    display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.footer-right a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+.footer-right a:hover{
+    color: #fff;
+    
+}

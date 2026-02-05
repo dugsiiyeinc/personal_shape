@@ -12,14 +12,11 @@ body{
 img {
   width: 100%;
   height: auto;
-  
 }
-
 
 .container{
     width: min(90%, 1112px);
     margin-inline: auto;
-   
 }
 .Portfolio-title{
     color: #9400ff;

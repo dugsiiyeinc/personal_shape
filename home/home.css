@@ -72,7 +72,7 @@ header {
 .menu-toggle .close-icon { display: none; }
 
 /* Make outside area not look different (so hero feels full like reference) */
-body { background: #f5f5f5; }  /* optional */
+body { background: #fff; }  /* optional */
 
 /* HERO */
 .hero {
@@ -140,8 +140,7 @@ body { background: #f5f5f5; }  /* optional */
 }
 
 .hero-title {
-  font-size: clamp(34px, 6vw, 86px);
-  font-weight: 900;
+  font-size: clamp(34px, 6vw, 70px);
   line-height: 1.05;
   margin-bottom: 1.2rem;
 }
@@ -200,9 +199,123 @@ body { background: #f5f5f5; }  /* optional */
   100% { transform: translate(-50%, 14px); opacity: 0; }
 }
 
-/* =========================
-   Mobile Menu (slide)
-   ========================= */
+.about{
+  background: #f2f2f2;
+  padding: 90px 0;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.about-wrap{
+  width: min(1100px, 92%);
+}
+
+.about-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 2;
+}
+
+/* ABOUT TITLE COLOR */
+.about-title h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(
+    90deg,
+    #6d5dfc,   /* blue-purple */
+    #8b5cf6    /* purple */
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+.about-line{
+  display: inline-block;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  margin-top: 12px;
+  background: #6366f1;
+}
+
+/* layout */
+.about-grid{
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* image card look */
+.about-photo{
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+  margin-left: 30px;
+}
+
+.about-photo img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* text */
+.about-text h3{
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 14px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.about-text p{
+  font-size: 13px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 12px;
+  max-width: 560px;
+}
+
+/* tags */
+.about-tags{
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: 560px;
+}
+
+.tag {
+  padding:0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6366f1;                /* blue-purple text */
+  background-color: #ffffff;
+
+  border-radius: 999px;
+
+  box-shadow: 
+    0 4px 12px rgba(13, 16, 207, 0.08);
+
+  cursor: pointer;
+
+}
+
+.tag:hover {
+  color: white;
+  background-color: #4f46e5;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -215,7 +328,6 @@ body { background: #f5f5f5; }  /* optional */
     z-index: 3100;
   }
 
-  /* make overlay menu slide */
   .menu-link {
     position: fixed;
     top: 5rem;
@@ -251,41 +363,41 @@ body { background: #f5f5f5; }  /* optional */
     -webkit-background-clip: text;
     background-clip: text;
 
-    font-size: clamp(2rem, 8vw, 3.2rem); /* bigger like first image */
+    font-size: clamp(2rem, 8vw, 3.2rem); 
     font-weight: 700;
     letter-spacing: -0.01em;
   }
-    /* HERO CONTAINER */
   .hero{
-    min-height: calc(100vh - 5rem); /* header height */
+    min-height: calc(100vh - 5rem); 
     padding-top: 2.5rem;
     padding-bottom: 3rem;
   }
 
-  /* GRID OVERLAY (lighter on mobile) */
   .hero-grid{
     opacity: 0.18;
     background-size: 48px 48px;
   }
 
-  /* EYEBROW */
   .hero-eyebrow{
     font-size: 12px;
     letter-spacing: 0.22em;
     margin-bottom: 0.75rem;
   }
 
-  /* MAIN TITLE */
   .hero-title{
     font-size: clamp(28px, 8vw, 42px);
     line-height: 1.15;
     margin-bottom: 1rem;
   }
-
-  /* SUBTITLE */
-  .hero-subtitle{
-    font-size: 15px;
-    line-height: 1.6;
-    padding-inline: 0.5rem;
+   .about-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   }
+  .about-photo{
+    margin: 20px;
   }
+.about-text{
+    margin: 20px;
+   }
 }

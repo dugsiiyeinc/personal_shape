@@ -1,0 +1,109 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Shape</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="menu">
+          <h1 class="logo">
+            <span class="logo-primary">Personal</span>
+            <span class="logo-accent">Shape</span>
+          </h1>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars open-icon"></i>
+            <i class="fa-solid fa-times close-icon"></i>
+          </button>
+
+          <ul class="menu-link" id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <section class="hero" id="home">
+  <div class="hero-grid"></div>
+
+  <!-- soft shapes like the reference -->
+  <div class="hero-shapes" aria-hidden="true">
+    <span class="shape circle c1"></span>
+    <span class="shape circle c2"></span>
+    <span class="shape circle c3"></span>
+    <span class="shape square s1"></span>
+    <span class="shape square s2"></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">CREATIVE DESIGNER</p>
+
+    <h1 class="hero-title">
+      Transforming Ideas<br />
+      Into Beautiful<br />
+      Experiences
+    </h1>
+
+    <p class="hero-subtitle">
+      I craft digital experiences that captivate, engage, and inspire
+      through thoughtful design and innovative solutions
+    </p>
+
+    <a class="hero-btn" href="#portfolio">Explore My Work</a>
+
+    <div class="scroll-indicator" aria-hidden="true"></div>
+  </div>
+</section>
+
+    <script>
+      const toggleBtn = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".menu-link");
+      const openIcon = document.querySelector(".open-icon");
+      const closeIcon = document.querySelector(".close-icon");
+
+      function setMenu(open) {
+        menu.classList.toggle("active", open);
+        document.body.classList.toggle("menu-open", open); // ✅ hide hero when menu open
+
+        toggleBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        openIcon.style.display = open ? "none" : "inline";
+        closeIcon.style.display = open ? "inline" : "none";
+
+        document.body.style.overflow = open ? "hidden" : "auto";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        setMenu(!menu.classList.contains("active"));
+      });
+
+      // Close menu when clicking a link
+      menu.addEventListener("click", (e) => {
+        if (e.target.tagName.toLowerCase() === "a") setMenu(false);
+      });
+
+      // Close on ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
+    </script>
+  </body>
+</html>

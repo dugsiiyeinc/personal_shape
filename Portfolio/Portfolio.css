@@ -11,7 +11,7 @@ body{
 }
 img {
   width: 100%;
-  height: auto;
+  height: 170px;
 }
 
 .container{
@@ -74,6 +74,7 @@ img {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
+    padding: 0px 20px 40px 20px;    
 
 }
 .tech-tag{
@@ -84,7 +85,7 @@ img {
     font-size: 0.85rem;
     font-weight: 500;
     transition: all 0.3s ease;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .tech-tag:hover{
     background-color: #9400ff;

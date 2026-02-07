@@ -90,6 +90,7 @@ img {
 .tech-tag:hover{
     background-color: #9400ff;
     color: #ffff;
+    cursor: pointer;
 }
 
 @media (max-width : 932px){

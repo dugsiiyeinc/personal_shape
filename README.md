@@ -89,3 +89,4 @@ This project is an **exercise from Dugsiiye** and was created purely for **learn
 ## 📄 License
 
 This project is for educational use only.
+This project is licensed under the MIT License.

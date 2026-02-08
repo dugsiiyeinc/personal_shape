@@ -49,12 +49,13 @@ img {
     border-radius: 1.5625rem;
     overflow: hidden;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2) ;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease-in-out;
+
 }
-.Portfolio-item .animate{
-    transform: translateY(0);
-    opacity: 1;
+.Portfolio-item:hover{
+  transform: scale(1.05);
 }
+
 
 .Portfolio-content{
     padding: 20px;

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(135deg, #3f51b5, #5b3fa4, #7b3fa0, #9c27b0);
+    background-size: 40px 40px, 40px 40px, cover;
+    height: 100vh;
+   
+
+}
+img {
+  width: 100%;
+  height: auto;
+  
+}
+.container{
+    width: min(90%, 1112px);
+    margin-inline: auto;
+}
+.content{
+    width: 50%;
+    margin-inline: auto;
+}
+.content-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 5rem;
+
+}
+.content-title h2::after{
+    background-color: gray;
+    content: "";
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+.content-title p{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+.form-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.form-group{
+  display: grid;
+  gap: 0.75rem;
+  text-align: left;
+    margin-top: 2rem;
+
+}
+.form-group label{
+    font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+.form-group input{
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d3d3d3;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-group textarea{
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d3d3d3;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  resize: vertical;
+  
+}
+.btn{
+  padding: 1.2rem 3rem;
+  background-color: #3f51b5;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 2rem;
+  width: 100%   ;
+}
+@media (max-width : 932px){
+    .content-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    margin-top: 2rem;
+
+}
+    .form-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+.content{
+    width: 90%;
+    margin-inline: auto;
+}
+}
